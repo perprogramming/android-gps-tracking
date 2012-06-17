@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<TextView
+	    android:id="@+id/totalDistanceLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Gesamtentfernung"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+	<EditText
+	    android:id="@+id/totalDistanceValueField"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:focusable="false"
+	    android:text="0.0m"
+	    android:inputType="text" />
+	<TextView
+		android:id="@+id/averageSpeedLabel"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Durschnittsgeschwindigkeit"
+		android:textAppearance="?android:attr/textAppearanceSmall" />	
+    <EditText
+        android:id="@+id/averageSpeedValueField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:text="0.0m/s"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:onClick="onStartButtonClicked" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:onClick="onPauseButtonClicked" />
+    
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:onClick="onStopButtonClicked" />
+
+</LinearLayout>
